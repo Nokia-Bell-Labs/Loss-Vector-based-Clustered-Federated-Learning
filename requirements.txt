@@ -1,0 +1,7 @@
+torch
+torchvision
+mlflow
+seaborn
+ml_collections
+datasets
+gdown

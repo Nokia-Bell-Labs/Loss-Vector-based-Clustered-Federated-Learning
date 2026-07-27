@@ -1,0 +1,114 @@
+Experiment ID,Experiment type,Dataset,Data classes,MNIST_all_digits,Clients per cluster,Datapoints per client,Algorithm,MA vs GA,Total rounds,initial_model_parameters,first_round_client_to_cluster_assignment,Linear Delta,Model,Mix Mode,Exp Selector,Ablation_Param,K_is_unknown,Upper bound on K,Early stopping,Participation Rate
+101,Clustering accuracy + loss over rounds,MNIST,10,"[0,1,2,3,4,5,6,7,8,9]",5,1000,"CLoVE, IFCA",MA,100,different,evaluation_based,,AE,,,,,,,
+102,Clustering accuracy + loss over rounds,MNIST,10,"[0,1,2,3,4,5,6,7,8,9]",10,1000,"CLoVE, IFCA",MA,100,different,evaluation_based,,AE,,,,,,,
+201,Clustering accuracy + loss over rounds,CIFAR10,10,,5,500,"CLoVE, IFCA",MA,100,different,evaluation_based,,AE,,,,,,,
+202,Clustering accuracy + loss over rounds,CIFAR10,10,,10,500,"CLoVE, IFCA",MA,100,different,evaluation_based,,AE,,,,,,,
+301,Clustering accuracy + loss over rounds,FMNIST,10,,5,1000,"CLoVE, IFCA",MA,100,different,evaluation_based,,AE,,,,,,,
+302,Clustering accuracy + loss over rounds,FMNIST,10,,10,1000,"CLoVE, IFCA",MA,100,different,evaluation_based,,AE,,,,,,,
+800,Clustering accuracy + loss over rounds,LINEAR,5,,5,1000,CLoVE,MA,5,different,evaluation_based,1,linear_regression,,,,,,,
+801,Clustering accuracy + loss over rounds,LINEAR,5,,5,1000,CLoVE,MA,5,different,evaluation_based,0.1,linear_regression,,,,,,,
+802,Clustering accuracy + loss over rounds,LINEAR,5,,5,1000,CLoVE,MA,5,different,evaluation_based,0.01,linear_regression,,,,,,,
+803,Clustering accuracy + loss over rounds,LINEAR,5,,5,1000,CLoVE,MA,5,different,evaluation_based,0.001,linear_regression,,,,,,,
+804,Clustering accuracy + loss over rounds,LINEAR,5,,5,1000,CLoVE,MA,5,different,evaluation_based,0.0003,linear_regression,,,,,,,
+901,Initialization experiments,MNIST,10,"[0,1,2,3,4,5,6,7,8,9]",5,500,"CLoVE, IFCA",MA,5,same,evaluation_based,,AE,,,,,,,
+902,Initialization experiments,MNIST,10,"[0,1,2,3,4,5,6,7,8,9]",5,500,"CLoVE, IFCA",MA,5,same,random,,AE,,,,,,,
+903,Initialization experiments,MNIST,10,"[0,1,2,3,4,5,6,7,8,9]",5,500,"CLoVE, IFCA",MA,5,different,evaluation_based,,AE,,,,,,,
+904,Initialization experiments,MNIST,10,"[0,1,2,3,4,5,6,7,8,9]",5,500,"CLoVE, IFCA",MA,5,different,random,,AE,,,,,,,
+1000,Clustering accuracy8,CIFAR10,10,,3,1000,"CLoVE, IFCA",MA,100,different,random,,CNN,zipped_with_overlap,exp111,,,,,
+1004,Clustering accuracy8,CIFAR10,10,,3,1000,"centralized, local, vanillaFL",MA,100,different,random,,CNN,zipped_with_overlap,exp111,,,,,
+1010,Clustering accuracy8,MNIST,10,"[0,1,2,3,4,5,6,7,8,9]",5,1000,"CLoVE, IFCA",MA,100,different,random,,CNN,zipped_with_overlap,exp111,,,,,
+1014,Clustering accuracy8,MNIST,10,"[0,1,2,3,4,5,6,7,8,9]",5,1000,"centralized, local, vanillaFL",MA,100,different,random,,CNN,zipped_with_overlap,exp111,,,,,
+1020,Clustering accuracy8,FMNIST,10,"[0,1,2,3,4,5,6,7,8,9]",5,1000,"CLoVE, IFCA",MA,100,different,random,,CNN,zipped_with_overlap,exp111,,,,,
+1024,Clustering accuracy8,FMNIST,10,"[0,1,2,3,4,5,6,7,8,9]",5,1000,"centralized, local, vanillaFL",MA,100,different,random,,CNN,zipped_with_overlap,exp111,,,,,
+1100,Clustering accuracy8,CIFAR10,10,,5,500,"CLoVE, IFCA",MA,100,different,random,,CNN,zipped_with_overlap,exp202,,,,,
+1104,Clustering accuracy8,CIFAR10,10,,5,500,"centralized, local, vanillaFL",MA,100,different,random,,CNN,zipped_with_overlap,exp202,,,,,
+1110,Clustering accuracy8,MNIST,10,"[0,1,2,3,4,5,6,7,8,9]",5,500,"CLoVE, IFCA",MA,100,different,random,,CNN,zipped_with_overlap,exp202,,,,,
+1114,Clustering accuracy8,MNIST,10,"[0,1,2,3,4,5,6,7,8,9]",5,500,"centralized, local, vanillaFL",MA,100,different,random,,CNN,zipped_with_overlap,exp202,,,,,
+1120,Clustering accuracy8,FMNIST,10,"[0,1,2,3,4,5,6,7,8,9]",5,500,"CLoVE, IFCA",MA,100,different,random,,CNN,zipped_with_overlap,exp202,,,,,
+1124,Clustering accuracy8,FMNIST,10,"[0,1,2,3,4,5,6,7,8,9]",5,500,"centralized, local, vanillaFL",MA,100,different,random,,CNN,zipped_with_overlap,exp202,,,,,
+1200,Clustering accuracy8,CIFAR10,10,,5,500,"CLoVE, IFCA",MA,100,different,random,,CNN,zipped_with_overlap,exp301,,,,,
+1204,Clustering accuracy8,CIFAR10,10,,5,500,"centralized, local, vanillaFL",MA,100,different,random,,CNN,zipped_with_overlap,exp301,,,,,
+1210,Clustering accuracy8,MNIST,10,"[0,1,2,3,4,5,6,7,8,9]",10,500,"CLoVE, IFCA",MA,100,different,random,,CNN,zipped_with_overlap,exp301,,,,,
+1214,Clustering accuracy8,MNIST,10,"[0,1,2,3,4,5,6,7,8,9]",10,500,"centralized, local, vanillaFL",MA,100,different,random,,CNN,zipped_with_overlap,exp301,,,,,
+1220,Clustering accuracy8,FMNIST,10,"[0,1,2,3,4,5,6,7,8,9]",10,500,"CLoVE, IFCA",MA,100,different,random,,CNN,zipped_with_overlap,exp301,,,,,
+1224,Clustering accuracy8,FMNIST,10,"[0,1,2,3,4,5,6,7,8,9]",10,500,"centralized, local, vanillaFL",MA,100,different,random,,CNN,zipped_with_overlap,exp301,,,,,
+1900,Clustering accuracy8,CIFAR10,10,,5,500,CLoVE,MA,100,different,random,,CNN,zipped_with_overlap,exp602,,,,,
+1901,Clustering accuracy8,CIFAR10,10,,5,500,CLoVE,MA,100,different,random,,CNN,zipped_with_overlap,exp602,1,,,,
+1902,Clustering accuracy8,CIFAR10,10,,5,500,CLoVE,MA,100,different,random,,CNN,zipped_with_overlap,exp602,2,,,,
+1903,Clustering accuracy8,CIFAR10,10,,5,500,CLoVE,MA,100,different,random,,CNN,zipped_with_overlap,exp602,3,,,,
+1300,Clustering accuracy8,CIFAR10,10,,3,500,"CLoVE, IFCA",MA,100,different,random,,CNN,zipped_with_overlap,exp201,,,,,
+1304,Clustering accuracy8,CIFAR10,10,,3,500,"centralized, local, vanillaFL",MA,100,different,random,,CNN,zipped_with_overlap,exp201,,,,,
+1310,Clustering accuracy8,MNIST,10,"[0,1,2,3,4,5,6,7,8,9]",5,500,"CLoVE, IFCA",MA,100,different,random,,CNN,zipped_with_overlap,exp201,,,,,
+1314,Clustering accuracy8,MNIST,10,"[0,1,2,3,4,5,6,7,8,9]",5,500,"centralized, local, vanillaFL",MA,100,different,random,,CNN,zipped_with_overlap,exp201,,,,,
+1320,Clustering accuracy8,FMNIST,10,"[0,1,2,3,4,5,6,7,8,9]",5,500,"CLoVE, IFCA",MA,100,different,random,,CNN,zipped_with_overlap,exp201,,,,,
+1324,Clustering accuracy8,FMNIST,10,"[0,1,2,3,4,5,6,7,8,9]",5,500,"centralized, local, vanillaFL",MA,100,different,random,,CNN,zipped_with_overlap,exp201,,,,,
+1400,Clustering accuracy8,CIFAR10,10,,3,500,"CLoVE, IFCA",MA,100,different,random,,CNN,zipped_with_overlap,exp203,,,,,
+1404,Clustering accuracy8,CIFAR10,10,,3,500,"centralized, local, vanillaFL",MA,100,different,random,,CNN,zipped_with_overlap,exp203,,,,,
+1410,Clustering accuracy8,MNIST,10,"[0,1,2,3,4,5,6,7,8,9]",5,500,"CLoVE, IFCA",MA,100,different,random,,CNN,zipped_with_overlap,exp203,,,,,
+1414,Clustering accuracy8,MNIST,10,"[0,1,2,3,4,5,6,7,8,9]",5,500,"centralized, local, vanillaFL",MA,100,different,random,,CNN,zipped_with_overlap,exp203,,,,,
+1420,Clustering accuracy8,FMNIST,10,"[0,1,2,3,4,5,6,7,8,9]",5,500,"CLoVE, IFCA",MA,100,different,random,,CNN,zipped_with_overlap,exp203,,,,,
+1424,Clustering accuracy8,FMNIST,10,"[0,1,2,3,4,5,6,7,8,9]",5,500,"centralized, local, vanillaFL",MA,100,different,random,,CNN,zipped_with_overlap,exp203,,,,,
+1500,Clustering accuracy8,CIFAR10,10,,3,500,"CLoVE, IFCA",MA,100,different,random,,CNN,zipped_with_overlap,exp501,,,,,
+1504,Clustering accuracy8,CIFAR10,10,,3,500,"centralized, local, vanillaFL",MA,100,different,random,,CNN,zipped_with_overlap,exp501,,,,,
+1510,Clustering accuracy8,MNIST,10,"[0,1,2,3,4,5,6,7,8,9]",5,500,"CLoVE, IFCA",MA,100,different,random,,CNN,zipped_with_overlap,exp501,,,,,
+1514,Clustering accuracy8,MNIST,10,"[0,1,2,3,4,5,6,7,8,9]",5,500,"centralized, local, vanillaFL",MA,100,different,random,,CNN,zipped_with_overlap,exp501,,,,,
+1520,Clustering accuracy8,FMNIST,10,"[0,1,2,3,4,5,6,7,8,9]",5,500,"CLoVE, IFCA",MA,100,different,random,,CNN,zipped_with_overlap,exp501,,,,,
+1524,Clustering accuracy8,FMNIST,10,"[0,1,2,3,4,5,6,7,8,9]",5,500,"centralized, local, vanillaFL",MA,100,different,random,,CNN,zipped_with_overlap,exp501,,,,,
+2000,Clustering accuracy8,AmazonReview,4,,5,1000,"CLoVE, IFCA",MA,100,different,random,,AmazonMLP,no_mixture,expAmazon,,,,,
+2004,Clustering accuracy8,AmazonReview,4,,5,1000,"centralized, local, vanillaFL",MA,100,different,random,,AmazonMLP,no_mixture,expAmazon,,,,,
+3000,Clustering accuracy8,AG_news,4,,5,100,"CLoVE, IFCA",MA,100,different,random,,TextCNN,zipped_with_overlap,exp401,,,,,
+3004,Clustering accuracy8,AG_news,4,,5,100,"centralized, local, vanillaFL",MA,100,different,random,,TextCNN,zipped_with_overlap,exp401,,,,,
+1600,Clustering accuracy8,CIFAR10,10,,3,500,"CLoVE, IFCA",MA,100,different,evaluation_based,,CNN,zipped_with_overlap,exp204,,,,,
+1604,Clustering accuracy8,CIFAR10,10,,3,500,"centralized, local, vanillaFL",MA,100,different,random,,CNN,zipped_with_overlap,exp204,,,,,
+1610,Clustering accuracy8,MNIST,10,"[0,1,2,3,4,5,6,7,8,9]",5,500,"CLoVE, IFCA",MA,100,different,random,,CNN,zipped_with_overlap,exp204,,,,,
+1614,Clustering accuracy8,MNIST,10,"[0,1,2,3,4,5,6,7,8,9]",5,500,"centralized, local, vanillaFL",MA,100,different,random,,CNN,zipped_with_overlap,exp204,,,,,
+1620,Clustering accuracy8,FMNIST,10,"[0,1,2,3,4,5,6,7,8,9]",5,500,"CLoVE, IFCA",MA,100,different,random,,CNN,zipped_with_overlap,exp204,,,,,
+1624,Clustering accuracy8,FMNIST,10,"[0,1,2,3,4,5,6,7,8,9]",5,500,"centralized, local, vanillaFL",MA,100,different,random,,CNN,zipped_with_overlap,exp204,,,,,
+2101,Scaling with clients,MNIST,10,"[0,1,2,3,4,5,6,7,8,9]",10,200,"CLoVE, IFCA",MA,100,different,evaluation_based,,AE,,,,,,,
+2102,Scaling with clients,MNIST,10,"[0,1,2,3,4,5,6,7,8,9]",20,200,"CLoVE, IFCA",MA,100,different,evaluation_based,,AE,,,,,,,
+2103,Scaling with clients,MNIST,10,"[0,1,2,3,4,5,6,7,8,9]",50,200,"CLoVE, IFCA",MA,100,different,evaluation_based,,AE,,,,,,,
+2104,Scaling with clients,MNIST,10,"[0,1,2,3,4,5,6,7,8,9]",100,100,"CLoVE, IFCA",MA,100,different,evaluation_based,,AE,,,,,,,
+4000,Variable K,FEMNIST,100,,1,1000,CLoVE,MA,100,different,random,,CNN,no_mixture,expFEMNIST,,TRUE,20,,
+5000,Partial participation,MNIST,10,"[0,1,2,3,4,5,6,7,8,9]",25,100,CLoVE,MA,100,different,random,,CNN,zipped_with_overlap,exp701,,,,,1
+5001,Partial participation,MNIST,10,"[0,1,2,3,4,5,6,7,8,9]",25,100,CLoVE,MA,100,different,random,,CNN,zipped_with_overlap,exp701,,,,,0.9
+5002,Partial participation,MNIST,10,"[0,1,2,3,4,5,6,7,8,9]",25,100,CLoVE,MA,100,different,random,,CNN,zipped_with_overlap,exp701,,,,,0.75
+5003,Partial participation,MNIST,10,"[0,1,2,3,4,5,6,7,8,9]",25,100,CLoVE,MA,100,different,random,,CNN,zipped_with_overlap,exp701,,,,,0.5
+5004,Partial participation,MNIST,10,"[0,1,2,3,4,5,6,7,8,9]",25,100,CLoVE,MA,100,different,random,,CNN,zipped_with_overlap,exp701,,,,,0.25
+5005,Partial participation,MNIST,10,"[0,1,2,3,4,5,6,7,8,9]",25,100,CLoVE,MA,100,different,random,,CNN,zipped_with_overlap,exp701,,,,,0.1
+6000,Early stopping,CIFAR10,10,,3,1000,CLoVE,MA,100,different,random,,CNN,zipped_with_overlap,exp111,,,,TRUE,
+6001,Early stopping,CIFAR10,10,,5,500,CLoVE,MA,100,different,random,,CNN,zipped_with_overlap,exp301,,,,TRUE,
+6002,Early stopping,CIFAR10,10,,3,500,CLoVE,MA,100,different,random,,CNN,zipped_with_overlap,exp201,,,,TRUE,
+6003,Early stopping,CIFAR10,10,,3,500,CLoVE,MA,100,different,random,,CNN,zipped_with_overlap,exp203,,,,TRUE,
+7001,Scaling with clients,MNIST,10,"[0,1,2,3,4,5,6,7,8,9]",10,200,"CLoVE, IFCA",MA,100,different,random,,CNN,zipped_with_overlap,exp203,,,,,
+7002,Scaling with clients,MNIST,10,"[0,1,2,3,4,5,6,7,8,9]",20,200,"CLoVE, IFCA",MA,100,different,random,,CNN,zipped_with_overlap,exp203,,,,,
+7003,Scaling with clients,MNIST,10,"[0,1,2,3,4,5,6,7,8,9]",50,200,"CLoVE, IFCA",MA,100,different,random,,CNN,zipped_with_overlap,exp203,,,,,
+7004,Scaling with clients,MNIST,10,"[0,1,2,3,4,5,6,7,8,9]",100,100,"CLoVE, IFCA",MA,100,different,random,,CNN,zipped_with_overlap,exp203,,,,,
+7004,Scaling with clients,MNIST,10,"[0,1,2,3,4,5,6,7,8,9]",200,100,"CLoVE, IFCA",MA,100,different,random,,CNN,zipped_with_overlap,exp203,,,,,
+7011,Scaling with clients,CIFAR10,10,,10,200,"CLoVE, IFCA",MA,100,different,random,,CNN,zipped_with_overlap,exp203,,,,,
+7012,Scaling with clients,CIFAR10,10,,20,200,"CLoVE, IFCA",MA,100,different,random,,CNN,zipped_with_overlap,exp203,,,,,
+7013,Scaling with clients,CIFAR10,10,,50,200,"CLoVE, IFCA",MA,100,different,random,,CNN,zipped_with_overlap,exp203,,,,,
+7014,Scaling with clients,CIFAR10,10,,100,100,"CLoVE, IFCA",MA,100,different,random,,CNN,zipped_with_overlap,exp203,,,,,
+7015,Scaling with clients,CIFAR10,10,,200,100,"CLoVE, IFCA",MA,100,different,random,,CNN,zipped_with_overlap,exp203,,,,,
+7021,Scaling with clients,FMNIST,10,,10,200,"CLoVE, IFCA",MA,100,different,random,,CNN,zipped_with_overlap,exp203,,,,,
+7022,Scaling with clients,FMNIST,10,,20,200,"CLoVE, IFCA",MA,100,different,random,,CNN,zipped_with_overlap,exp203,,,,,
+7023,Scaling with clients,FMNIST,10,,50,200,"CLoVE, IFCA",MA,100,different,random,,CNN,zipped_with_overlap,exp203,,,,,
+7024,Scaling with clients,FMNIST,10,,100,100,"CLoVE, IFCA",MA,100,different,random,,CNN,zipped_with_overlap,exp203,,,,,
+7025,Scaling with clients,FMNIST,10,,200,100,"CLoVE, IFCA",MA,100,different,random,,CNN,zipped_with_overlap,exp203,,,,,
+4001,Variable K,MNIST,5,"[5,6,7,8,9]",2,100,CLoVE,MA,20,different,random,,AE,no_mixture,,,TRUE,10,,
+4002,Variable K,MNIST,10,"[0,1,2,3,4,5,6,7,8,9]",2,500,CLoVE,MA,30,different,random,,AE,no_mixture,,,TRUE,20,TRUE,0.4
+4003,Variable K,MNIST,10,"[0,1,2,3,4,5,6,7,8,9]",2,1000,CLoVE,MA,60,different,evaluation_based,,AE,no_mixture,,,TRUE,20,TRUE,0.4
+4004,Variable K,MNIST,10,"[0,1,2,3,4,5,6,7,8,9]",2,1000,CLoVE,MA,60,different,evaluation_based,,AE,no_mixture,,,TRUE,20,FALSE,0.4
+8000,Early stopping Unknown K,CIFAR10,10,,3,1000,CLoVE,MA,100,different,evaluation_based,,CNN,zipped_with_overlap,exp204,,TRUE,15,TRUE,1
+8001,Early stopping Unknown K,CIFAR10,10,,2,500,CLoVE,MA,100,different,evaluation_based,,CNN,zipped_with_overlap,exp204,,TRUE,15,TRUE,1
+8002,Early stopping Unknown K,CIFAR10,10,,2,500,CLoVE,MA,100,same,evaluation_based,,CNN,zipped_with_overlap,exp204,,TRUE,15,TRUE,1
+8003,Early stopping Unknown K,FMNIST,10,"[0,1,2,3,4,5,6,7,8,9]",2,500,CLoVE,MA,20,same,evaluation_based,,CNN,no_mixture,,,TRUE,15,TRUE,1
+8004,Early stopping Unknown K,MNIST,10,"[0,1,2,3,4,5,6,7,8,9]",2,500,CLoVE,MA,20,same,evaluation_based,,CNN,no_mixture,,,TRUE,15,TRUE,1
+8005,Early stopping Unknown K,MNIST,10,"[0,1,2,3,4,5,6,7,8,9]",2,500,CLoVE,MA,20,same,evaluation_based,,CNN,zipped_with_overlap,exp203,,TRUE,15,TRUE,1
+8006,Early stopping Unknown K,MNIST,10,"[0,1,2,3,4,5,6,7,8,9]",2,500,CLoVE,MA,20,same,evaluation_based,,CNN,zipped_with_overlap,exp201,,TRUE,15,TRUE,1
+8007,Early stopping Unknown K,MNIST,10,"[0,1,2,3,4,5,6,7,8,9]",2,500,CLoVE,MA,20,same,evaluation_based,,CNN,zipped_with_overlap,exp202,,TRUE,15,TRUE,1
+8008,Early stopping Unknown K,MNIST,10,"[0,1,2,3,4,5,6,7,8,9]",2,500,CLoVE,MA,20,same,evaluation_based,,CNN,zipped_with_overlap,exp501,,TRUE,15,TRUE,1
+8009,Early stopping Unknown K,MNIST,10,"[0,1,2,3,4,5,6,7,8,9]",2,500,CLoVE,MA,20,same,evaluation_based,,CNN,zipped_with_overlap,exp301,,TRUE,15,TRUE,1
+8010,Early stopping Unknown K,MNIST,10,"[0,1,2,3,4,5,6,7,8,9]",2,500,CLoVE,MA,20,same,evaluation_based,,CNN,zipped_with_overlap,exp111,,TRUE,15,TRUE,1
+8100,Clustering accuracy8,CIFAR10,10,,5,500,CLoVE,MA,100,same,evaluation_based,,CNN,zipped_with_overlap,exp602,,TRUE,15,TRUE,1
+8101,Clustering accuracy8,MNIST,10,"[0,1,2,3,4,5,6,7,8,9]",5,500,CLoVE,MA,100,same,evaluation_based,,CNN,zipped_with_overlap,exp602,,TRUE,15,TRUE,1
+8102,Clustering accuracy8,FMNIST,10,"[0,1,2,3,4,5,6,7,8,9]",5,500,CLoVE,MA,100,same,evaluation_based,,CNN,zipped_with_overlap,exp602,,TRUE,15,TRUE,1
