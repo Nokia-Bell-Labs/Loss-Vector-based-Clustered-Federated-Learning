@@ -1,4 +1,4 @@
-# CLoVE: Personalized Federated Learning through Clustering of Loss Vector Embeddings 
+# CLoVE: Personalized Federated Learning through Clustering of Loss Vector Embeddings
 
 This repository contains the official code of the paper ``CLoVE: Personalized Federated Learning through Clustering of Loss Vector Embeddings``, accepted at the Forty-Third International Conference on Machine Learning (ICML 2026).
 
